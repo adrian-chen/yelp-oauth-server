@@ -10,13 +10,13 @@ var yelp = require("yelp").createClient({
 })
 ;
 app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Origin", "irakliz.github.io/yelp-jquery/*");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   next();
 });
 
 app.get('/', function(req, res) {
-    res.send("Develra's Yelp O-Auth Avoidence Service")
+    res.send("Yelp Oauth")
 })
 
 app.get('/search/:yelp_params', function(req, res) {    
